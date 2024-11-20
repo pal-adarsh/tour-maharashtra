@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tour Maharashtra</title>
+
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles2.css">
+  <style>
+    a{
+      text-decoration: none;
+      color: white;
+    }
+  </style>
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="lion">
+    <div class="giraffe">
+      <a href="new tourism.html" class="elephant"></a>
+      <div class="login123">
+        <img src="Login page/login.png" alt="" height="80px" width="80px">
+        <p><b><a href="Login page/Loginpage.html" target="_blank">login / signup</a></b></p>
+      </div>
+      <div class="koala">
+        <div class="panda"></div>
+        <div class="panda"></div>
+        <div class="panda"></div>
+      </div>
+      <ul class="tiger">
+        <li class="zebra">
+          <a href="new tourism.html" class="cheetah">Home</a>
+        </li>
+        <li class="zebra">
+          <a href="#destination" class="cheetah">Destinations</a>
+        </li>
+        <li class="zebra dropdown">
+          <a href="#tours" class="cheetah">Tours</a>
+          <ul class="gorilla">
+            <li><a href="#adventure" class="rhino">Adventure Tours</a></li>
+            <li><a href="#cultural" class="rhino">Cultural Tours</a></li>
+            <li><a href="#luxury" class="rhino">Luxury Tours</a></li>
+          </ul>
+        </li>
+        <li class="zebra">
+          <a href="#activities" class="cheetah">Activities</a>
+        </li>
+        <li class="zebra"></li>
+          <a href="#special" class="cheetah">Offers</a>
+        </li>
+        <li class="zebra">
+          <a href="#testimonials" class="cheetah">Testimonials</a>
+        </li>
+        <li class="zebra">
+            <a href="#subscribe" class="cheetah">Subscribe</a>
+        </li>
+        <li class="zebra">
+          <a href="#contact" class="cheetah">Contact Us</a>
+        </li>
+      </ul>
+      <div class="monkey">
+        <input type="text" placeholder="Search" class="parrot">
+        <button class="peacock">Search</button>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="main">
+    <div class="carousel">
+        <!-- Indicators -->
+        <div class="carousel-indicators">
+            <button class="active" data-slide="0"></button>
+            <button data-slide="1"></button>
+            <button data-slide="2"></button>
+            <button data-slide="3"></button>
+            <button data-slide="4"></button>
+        </div>
+
+        <!-- Carousel Items -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img2/mumbai.jpg" alt="Image 1">
+            </div>
+            <div class="carousel-item">
+                <img src="img2/lonavala.jpeg" alt="Image 2">
+            </div>
+            <div class="carousel-item">
+                <img src="img2/nashik.jpg" alt="Image 3">
+            </div>
+            <div class="carousel-item">
+                <img src="img2/pune.jpg" alt="Image 4">
+            </div>
+            <div class="carousel-item">
+                <img src="img2/matheran.jpeg" alt="Image 5">
+            </div>
+        </div>
+
+        <!-- Custom Bottom Controls -->
+        <div class="carousel-bottom-controls">
+            <button class="carousel-control-bottom prev">&#60;</button>
+            <button class="carousel-control-bottom next">&#62;</button>
+        </div>
+    </div>
+</div>
+
+<div >
+  <button class="placess"><a href="Explore india.html">Explore the Places</a></button>
+</div>
+
+
+  <!-- Top Destinations Section -->
+    <section class="destination sparrow" id="destination">
+      <div class="container">
+        <h2>Top Destinations</h2>
+
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <img src="img2/beach.jpg" class="card-img-top" alt="..." height="250px">
+              <div class="card-body">
+                <h5 class="card-title">Beach</h5>
+                <p class="card-text">Relax on the golden sands and enjoy the crystal-clear waters.</p>
+                <a href="#" class="btn btn-custom">Learn More</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card">
+              <img src="img2/mountain.jpg" class="card-img-top" alt="..." height="250px">
+              <div class="card-body">
+                <h5 class="card-title">Mountain Escape</h5>
+                <p class="card-text">Escape to the tranquility of majestic mountains. Wanna lost in the skies</p>
+                <a href="#" class="btn btn-custom">Learn More</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card">
+              <img src="img2/city light.jpg" class="card-img-top" alt="..." height="250px">
+              <div class="card-body">
+                <h5 class="card-title">City Lights</h5>
+                <p class="card-text">Discover the charm of vibrant cityscapes and historic landmarks.</p>
+                <a href="#" class="btn btn-custom">Learn More</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+  <!-- Featured Tours Section -->
+  <section class="featured-tours sparrow" id="tours">
+    <div class="container">
+      <h2>Featured Tours</h2>
+      <div class="row">
+
+        <div class="col-md-4">
+          <div class="card">
+            <img src="img2/mumbai tour.jpg" alt="" height="250px">
+            <div class="card-body">
+              <h5 class="card-title">Mumbai City Tour</h5>
+              <p class="card-text">"Explore the bustling metropolis of Mumbai, from the iconic Gateway of India to the historic Chhatrapati Shivaji Maharaj Terminus. Don’t miss the vibrant street markets, Marine Drive, and Bollywood tours!"</p>
+              <a href="#" class="btn btn-outline-custom">Book Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <img src="img2/ajanta.jpg" alt="" height="250px">
+            <div class="card-body">
+              <h5 class="card-title">Ajanta & Ellora Caves Tour</h5>
+              <p class="card-text">"A UNESCO World Heritage Site, the Ajanta and Ellora Caves showcase ancient rock-cut architecture and exquisite Buddhist, Jain, and Hindu sculptures. A must-visit for history and art lovers."</p>
+              <a href="#" class="btn btn-outline-custom">Book Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <img src="img2/konkan.jpg" alt="..." height="250px">
+            <div class="card-body">
+              <h5 class="card-title">Konkan Coastal Tour</h5>
+              <p class="card-text">"Discover the serene beauty of the Konkan coast, with pristine beaches like Ganpatipule, scenic landscapes, and coastal forts. Enjoy local seafood and traditional Konkani hospitality along the way."</p>
+              <a href="#" class="btn btn-outline-custom">Book Now</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Popular Activities Section -->
+  <section class="activities sparrow" id="activities">
+    <div class="container">
+      <h2>Popular Activities</h2>
+      <div class="row">
+
+        <div class="col-md-4">
+          <div class="card">
+            <img src="img2/trek.jpg" class="card-img-top" alt="..." height="280px">
+            <div class="card-body">
+              <h5 class="card-title">Trekking</h5>
+              <p class="card-text">Maharashtra is home to stunning trekking destinations like Rajmachi, Lohagad, and Harishchandragad. Explore the Sahyadri ranges and enjoy breathtaking views and historical forts</p>
+              
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <img src="img2/food.jpg" class="card-img-top" alt="..."  height="280px">
+            <div class="card-body">
+              <h5 class="card-title">Food</h5>
+              <p class="card-text">Maharashtra's diverse cuisine ranges from spicy street food like vada pav to traditional delights like puran poli. Experience the flavors that define the state’s culinary identity</p>
+              
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <img src="img2/bappa.jpg" class="card-img-top" alt="..." height="280px">
+            <div class="card-body">
+              <h5 class="card-title">Ganesh chaturthi</h5>
+              <p class="card-text">Ganesh Chaturthi is Maharashtra’s most vibrant festival, celebrated with grand processions and artistic idols. Witness the culture and devotion during this 10-day festivity</p>
+             
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  
+  <!-- Special Offers Section -->
+  <section class="offers sparrow" id="special">
+    <div class="container">
+      <h2>Water Parks</h2>
+      <div class="row">
+
+        <div class="col-md-4">
+          <div class="card">
+            <img src="img2/imagica.jpeg" class="card-img-top" alt="..." height="280px">
+            <div class="card-body">
+              <h5 class="card-title">Imagica</h5>
+              <p class="card-text"> Imagica is a world-class theme park offering thrilling rides, live shows, and immersive experiences. It’s perfect for families and adventure seekers alike, with attractions ranging from roller coasters to themed restaurants.</p>
+              
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <img src="img2/wetnjoy.jpg" class="card-img-top" alt="..."  height="280px">
+            <div class="card-body">
+              <h5 class="card-title">Wet n Joy</h5>
+              <p class="card-text">Wet n Joy, located in Lonavala and Shirdi, is a massive water park featuring high-speed water slides, wave pools, and relaxing lazy rivers. It’s the ideal spot for a fun-filled day in the sun. </p>
+              
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <img src="img2/kingdom.jpg" class="card-img-top" alt="..." height="280px">
+            <div class="card-body">
+              <h5 class="card-title"> Water Kingdom</h5>
+              <p class="card-text"> Water Kingdom in Mumbai is Asia’s largest water park, with an array of exciting water rides, a giant wave pool, and attractions for all ages. It promises endless entertainment and a refreshing escape </p>
+             
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Customer Testimonials Section -->
+  <section class="testimonials sparrow" id="testimonials">
+    <div class="container">
+      <h2>Customer Testimonials</h2>
+      <div class="row">
+
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <p class="card-text">"An unforgettable experience! The tours were amazing, and the service was top-notch."</p>
+              <footer class="blockquote-footer">Ayush </footer>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <p class="card-text">"I had a fantastic time exploring new places. Highly recommend to anyone looking for adventure."</p>
+              <footer class="blockquote-footer"> Suyash</footer>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <p class="card-text">"Exceptional service and beautiful destinations. I will definitely book again. you should also try once"</p>
+              <footer class="blockquote-footer"> Pratik </footer>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <br><br>
+
+
+<section id="subscribe" class="subscription-section sparrow">
+    <div class="container">
+        <div class="subscription-content">
+            <h2 class="subscription-title">Stay Updated with Our Latest Offers!</h2>
+            <p class="subscription-text">Subscribe to our newsletter and receive exclusive deals, travel tips, and updates on popular destinations.</p>
+
+            <form class="subscription-form">
+                <div class="form-group">
+                    <input type="email" placeholder="Enter your email" class="form-input" required>
+                    <button type="submit" class="btn btn-subscribe">Subscribe Now</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="contact-section sparrow">
+    <div class="container">
+        <div class="contact-content">
+            <h2 class="contact-title">Get in Touch with Us</h2>
+            <p class="contact-text">We're here to assist you with any inquiries, suggestions, or support you may need. Reach out to us, and we'll get back to you as soon as possible.</p>
+
+            <div class="contact-details">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Head office, New Delhi</p>
+                    <p><i class="fas fa-phone"></i>  </p>
+                    <p><i class="fas fa-envelope"></i> tourindia@gmail.com</p>
+                </div>
+
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" class="form-input" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-input" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-input" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-contact">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top"><i class="bi bi-arrow-up"></i></button>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Tourism Website. All Rights Reserved.</p>
+    <p><a href="Pages/Privacy Policy.html" target="_blank">Privacy Policy</a> | <a href="Pages/Terms of Service.html" target="_blank">Terms of Service</a></p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <script>
+    // Show/Hide "Back to Top" Button
+    window.onscroll = function() {
+      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        document.getElementById("back-to-top").style.display = "block";
+      } else {
+        document.getElementById("back-to-top").style.display = "none";
+      }
+    };
+  
+    // Scroll to top when button is clicked
+    document.getElementById("back-to-top").addEventListener("click", function() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  
+    // JavaScript for Carousel Functionality
+    document.addEventListener('DOMContentLoaded', () => {
+      const items = document.querySelectorAll('.carousel-item');
+      const indicators = document.querySelectorAll('.carousel-indicators button');
+      const prevButton = document.querySelector('.carousel-control-bottom.prev');
+      const nextButton = document.querySelector('.carousel-control-bottom.next');
+      let currentIndex = 0;
+      let autoScrollInterval = 3000; // Auto-scroll interval in milliseconds (3 seconds)
+      let interval;
+  
+      function showSlide(index) {
+        items.forEach((item, i) => {
+          item.classList.toggle('active', i === index);
+        });
+        indicators.forEach((indicator, i) => {
+          indicator.classList.toggle('active', i === index);
+        });
+      }
+  
+      function showNextSlide() {
+        currentIndex = (currentIndex + 1) % items.length;
+        showSlide(currentIndex);
+      }
+  
+      function showPrevSlide() {
+        currentIndex = (currentIndex - 1 + items.length) % items.length;
+        showSlide(currentIndex);
+      }
+  
+      function startAutoScroll() {
+        interval = setInterval(showNextSlide, autoScrollInterval);
+      }
+  
+      function stopAutoScroll() {
+        clearInterval(interval);
+      }
+  
+      indicators.forEach((indicator) => {
+        indicator.addEventListener('click', () => {
+          const index = parseInt(indicator.getAttribute('data-slide'));
+          currentIndex = index;
+          showSlide(currentIndex);
+          stopAutoScroll(); // Stop auto-scroll on user interaction
+        });
+      });
+  
+      prevButton.addEventListener('click', () => {
+        showPrevSlide();
+        stopAutoScroll(); // Stop auto-scroll on user interaction
+      });
+  
+      nextButton.addEventListener('click', () => {
+        showNextSlide();
+        stopAutoScroll(); // Stop auto-scroll on user interaction
+      });
+  
+      // Initialize the carousel
+      showSlide(currentIndex);
+      startAutoScroll();
+    });
+
+    // new wala code
+// JavaScript for Dropdown Menu and Mobile Menu Toggle
+const koala = document.querySelector('.koala');
+    const tiger = document.querySelector('.tiger');
+
+    koala.addEventListener('click', () => {
+      tiger.classList.toggle('show');
+    });
+
+    // Handle dropdowns for mobile view
+    const zebras = document.querySelectorAll('.zebra');
+    zebras.forEach(zebra => {
+      zebra.addEventListener('click', () => {
+        zebra.classList.toggle('show');
+      });
+    });
+
+
+    // down to up
+
+    document.addEventListener("DOMContentLoaded", function() {
+            const elements = document.querySelectorAll('.sparrow');
+
+            function scrollAppear() {
+                elements.forEach((element) => {
+                    const position = element.getBoundingClientRect().top;
+                    const windowHeight = window.innerHeight;
+
+                    if (position < windowHeight - 100) {
+                        element.classList.add('active');
+                    }
+                });
+            }
+
+            window.addEventListener('scroll', scrollAppear);
+
+            // Call the function initially to activate elements already in view
+            scrollAppear();
+        });
+  </script>
+  
+</body>
+</html>

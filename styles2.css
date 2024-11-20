@@ -1,0 +1,234 @@
+   /* Basic Reset and Global Styles */
+   body, h1, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+
+  /* Navbar Styles */
+  .lion {
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+  }
+
+  .giraffe {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+
+  .elephant {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .tiger {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+
+  .zebra {
+    position: relative;
+  }
+
+  .cheetah {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1rem;
+    padding: 10px;
+    display: block;
+    transition: color 0.3s, background-color 0.3s;
+  }
+
+  .cheetah:hover {
+    color: #ff6347;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+  }
+
+  .gorilla {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    border-radius: 5px;
+    list-style: none;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .zebra:hover .gorilla,
+  .zebra.show .gorilla {
+    display: block;
+  }
+
+  .rhino {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    display: block;
+    transition: color 0.3s;
+  }
+
+  .rhino:hover {
+    color: #ff6347;
+  }
+
+  .monkey {
+    display: flex;
+    align-items: center;
+  }
+
+  .parrot {
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 200px;
+    transition: width 0.3s ease;
+  }
+
+  .parrot:focus {
+    width: 250px;
+    outline: none;
+  }
+
+  .peacock {
+    padding: 8px 15px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff4500;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .peacock:hover {
+    background-color: #ff6347;
+  }
+
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+    .tiger {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      background-color: #333;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      padding: 10px;
+    }
+
+    .tiger.show {
+      display: flex;
+    }
+
+    .zebra {
+      width: 100%;
+    }
+
+    .cheetah {
+      padding: 15px;
+      text-align: center;
+    }
+
+    .monkey {
+      flex-direction: column;
+      margin-top: 10px;
+    }
+
+    .parrot {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    .peacock {
+      width: 100%;
+    }
+  }
+
+  /* Hamburger Menu */
+  .koala {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 10px;
+  }
+
+  .panda {
+    height: 3px;
+    width: 25px;
+    background-color: #fff;
+    margin: 4px 0;
+    transition: 0.4s;
+  }
+
+  @media (max-width: 768px) {
+    .koala {
+      display: flex;
+    }
+  }
+
+
+
+  /* new down to up */
+
+  /* Keyframes for the scroll animation */
+  @keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Initial state of the elements before they appear */
+.sparrow {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* Add active class when the element should animate */
+.sparrow.active {
+    animation: fadeInUp 1s forwards;
+}
+.placess{
+  color: black;
+  font-size: 25px;
+  font-weight: bold;
+  background-color: orange;
+  border-radius: 20px;
+  margin-top: 50px;
+  margin-left: 650px;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+.login123{
+  margin-top: -20px;
+}

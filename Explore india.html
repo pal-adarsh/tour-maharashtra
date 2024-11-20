@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian States Guide</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+       body {
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            font-family: Arial, sans-serif;
+            background-image: url('');
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            transition: background-color 0.3s, color 0.3s;
+            background-image: radial-gradient( circle 1292px at -13.6% 51.7%,  rgba(0,56,68,1) 0%, rgba(163,217,185,1) 51.5%);
+        }
+
+        .header {
+            color: black;
+            padding: 15px;
+            text-align: center;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .header h1 {
+            margin: 0;
+        }
+
+        .search-bar {
+            height: 30px;
+            margin-top: 15px;
+            padding: 10px;
+            border-radius: 20px;
+            width: 300px;
+            font-style: bold;
+            border: 1px solid #ddd;
+        }
+
+        .container {
+            gap: 30px;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            
+        }
+
+        .state-card {
+            width: 300px;
+            padding: 20px;
+            background-color: #eee;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+          
+        }
+
+        .state-card:hover {
+            transform: scale(1.05);
+            transform: translateY(-20px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        .state-name {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #4CAF50;
+            margin-bottom: 10px;
+            text-align: center;
+            animation: fadeIn 1s ease-in;
+        }
+
+        .card-details {
+            margin-top: 10px;
+        }
+
+        .card-details p {
+            margin: 8px 0;
+        }
+
+        .card-details img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .state-card {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+        img{
+            width: 300px;
+            height: 170px;
+            border-radius: 10px;
+            transition: 0.5s ease;
+
+            &:hover{
+                scale: 1.1;
+            }
+        }
+        button{
+            color: white;
+            font-size: 15px;
+            height: 30px;
+            width: 100px;
+            font-weight: bold;
+            margin-top: 20px;
+            margin-left: 90px;
+            border-radius: 20px;
+            transition: 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            background-color: transparent;
+            backdrop-filter: blur(10px);
+            background-image: linear-gradient(to right, #434343 0%, black 100%);
+
+            &:hover{
+                scale: 1.1;
+                cursor: pointer;
+                box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+            } 
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1><b>महाराष्ट्र</b></h1>
+        <input type="text" id="search" class="search-bar" placeholder="Search for a place....."> 
+    </div>
+
+    <div class="container" id="state-container">
+        <!-- Card for Andhra Pradesh -->
+        <div class="state-card">
+            <div class="state-name"> Lonavala </div>
+            <hr>
+            <img src="img1/lonavala.jpeg" alt="">
+            <div class="card-details">
+                <p><strong>G-map:</strong> </p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60446.629989977744!2d73.37052301590347!3d18.75736133974688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be801098bdf8145%3A0x696b4a60a5e28658!2sLonavala%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1728985707737!5m2!1sen!2sin" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p><strong>Nearby location : Lonavala railway station </strong> </p>
+            </div>
+        </div>
+
+        <div class="state-card">
+            <div class="state-name"> GATE WAY OF INDIA </div>
+            <hr>
+            <img src="img1/gateway.jpg" alt="">
+            <div class="card-details">
+                <p><strong>G-map:</strong> </p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30189.65671606249!2d72.80699860948147!3d18.944354962904924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7d1c73a0d5cad%3A0xc70a25a7209c733c!2sGateway%20Of%20India%20Mumbai!5e0!3m2!1sen!2sin!4v1728985128369!5m2!1sen!2sin"  width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p><strong> Nearby location : CSMT railway station</strong> </p>
+            </div>
+        </div>
+
+        <div class="state-card">
+            <div class="state-name"> Marine Drive </div>
+            <hr>
+            <img src="img1/marine.jpg" alt="">
+            <div class="card-details">
+                <p><strong>G-map:</strong> </p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3773.7329486203525!2d72.82042337504859!3d18.943211082234253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7d1e25ee8439d%3A0x5acd924f2726ad2b!2sMarine%20Dr%2C%20Mumbai!5e0!3m2!1sen!2sin!4v1728986338833!5m2!1sen!2sin" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p><strong> Nearby location : Marine Lines railway station</strong> </p>
+            </div>
+        </div>
+
+        <div class="state-card">
+            <div class="state-name"> Siddhivinayak </div>
+            <hr>
+            <img src="img1/Siddhivinayak.jpg" alt="">
+            <div class="card-details">
+                <p><strong>G-map:</strong> </p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d120759.46753002284!2d72.74059641940516!3d18.94319287041743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7cec0d851ebc3%3A0xcc61876914526329!2sShree%20Siddhivinayak%20Temple!5e0!3m2!1sen!2sin!4v1728986548926!5m2!1sen!2sin" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p><strong> Nearby location : Dadar Railway station </strong> </p>
+            </div>
+        </div>
+
+        <div class="state-card">
+            <div class="state-name"> Elephanta Cave</div>
+            <hr>
+            <img src="img1/Elephanta.jpg" alt="">
+            <div class="card-details">
+                <p><strong>G-map:</strong> </p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d120759.49385251992!2d72.7405961821796!3d18.943156482462502!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c5307da3602f%3A0xf4ab181b1aaef53f!2sElephanta%20Caves!5e0!3m2!1sen!2sin!4v1728986840548!5m2!1sen!2sin" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p><strong> Nearby location : CSMT Railway Station after that a taxi </strong> </p>
+            </div>
+        </div>
+
+        <div class="state-card">
+            <div class="state-name"> Darshan Museum </div>
+            <hr>
+            <img src="img1/Museum.jpg" alt="">
+            <div class="card-details">
+                <p><strong>G-map:</strong> </p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.10635747768!2d73.87389477503793!3d18.524095282570176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c05a6c7a9121%3A0x402d0c33068f922a!2sDarshan%20Museum!5e0!3m2!1sen!2sin!4v1728986916933!5m2!1sen!2sin" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p><strong> Nearby location :  Pune Railway station </strong> </p>
+            </div>
+        </div>
+
+
+        <div class="state-card">
+            <div class="state-name"> Trimbakeshwar temple </div>
+            <hr>
+            <img src="img1/Trimbakeshwar.jpg" alt="">
+            <div class="card-details">
+                <p><strong>G-map:</strong> </p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d480104.38619355654!2d72.92105978906253!3d19.9321775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bddeb0389cc3b99%3A0x8e28cfe56185048d!2sTrimbakeshwar%20Jyotirling%20Temple!5e0!3m2!1sen!2sin!4v1728986971735!5m2!1sen!2sin" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p><strong> Nearby location : Nashik Railway Station </strong> </p>
+            </div>
+        </div>
+        
+        <div class="state-card">
+            <div class="state-name">sanjay gandhi national park </div>
+            <hr>
+            <img src="img1/SGNP.webp" alt="">
+            <div class="card-details">
+                <p><strong>G-map:</strong> </p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3767.4215024633477!2d72.91026727505579!3d19.22045348201411!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b0c88b1d3d9f%3A0x3621dd69daa8e2cf!2sSanjay%20Gandhi%20National%20Park!5e0!3m2!1sen!2sin!4v1728988517709!5m2!1sen!2sin" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p><strong>Nearby Location : Borivali Railway Station </strong> </p>
+            </div>
+        </div>
+
+
+        <div class="state-card">
+            <div class="state-name"> Bhima shankar </div>
+            <hr>
+            <img src="img1/Bhimshankar.jpg" alt="">
+            <div class="card-details">
+                <p><strong>G-map:</strong> </p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7541.548202159252!2d73.52871134151408!3d19.073667228521554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdd596b4dab6e0d%3A0x130b352babcc1732!2sBhimashankar%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1728988695471!5m2!1sen!2sin" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p><strong>Nearby Location : </strong> </p>
+            </div>
+        </div>
+
+
+        <div class="state-card">
+            <div class="state-name">Sinhagad </div>
+            <hr>
+            <img src="img1/Sinhagad.webp" alt="">
+            <div class="card-details">
+                <p><strong>G-map:</strong> </p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d121151.06855140415!2d73.68129095479568!3d18.394175857370236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc293dc45cca0fb%3A0x58e4642c4c2dd223!2sSinhagad!5e0!3m2!1sen!2sin!4v1728988817597!5m2!1sen!2sin" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p><strong>Nearby Location : Pune Raiilway Station</strong> </p>
+            </div>
+        </div>
+
+
+        <div class="state-card">
+            <div class="state-name">Shirdi</div>
+            <hr>
+            <img src="img1/sirdi.jpeg" alt=""width="300" height="250" >
+            <div class="card-details">
+                <p><strong>G-map:</strong></p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3754.7404696133954!2d74.47223369678956!3d19.766178200000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdc5b95bf70c2f7%3A0x23dbc9b2db45374!2sShri%20Sai%20Baba%20Temple%20Shirdi!5e0!3m2!1sen!2sin!4v1728987413835!5m2!1sen!2sin" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p><strong>Nearby Location: Shirdi Railway Station</strong> </p>
+    
+            </div>
+        </div>
+    
+        <div class="state-card">
+            <div class="state-name"> Matheran </div>
+            <hr>
+            <img src="img1/matheran.jpeg" alt=""alt=""width="300" height="250">
+            <div class="card-details">
+                <p><strong>G-map:</strong></p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60362.6824092013!2d73.23170606845875!3d18.990279703738587!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7e5566af9569b%3A0x56bade96248a07e6!2sMatheran%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1728988118723!5m2!1sen!2sin" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></strong> </p>
+                <p><strong>Nearby Location : Neral Railway Station </strong> </p>
+            </div>
+        </div>
+    
+        <div class="state-card">
+             <div class="state-name"> Kalaram Mandir </div>
+             <hr>
+             <img src="img1/kalaram.jpeg" alt=""width="300" height="250">
+             <div class="card-details">
+                 <p><strong>G-map:</strong> </p>
+                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d468.62866174238303!2d73.7952608!3d20.007285200000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bddea54af93f661%3A0x24d9baa56b890e57!2sShree%20Kalaram%20Mandir%20Sansthan!5e0!3m2!1sen!2sin!4v1728988861938!5m2!1sen!2sin" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                 <p><strong>Nearby Location : </strong> </p>
+             </div>
+        </div>
+
+        <div class="state-card">
+            <div class="state-name"> shani shingnapur</div>
+            <hr>
+            <img src="img1/shani shingnapur.jpg" alt="">
+            <div class="card-details">
+                <p><strong>G-map:</strong> </p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15054.691593902786!2d74.8487404987842!3d19.3833111101662!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdc9947273cd64f%3A0x8fa72555d843e2f3!2sShani%20Shingnapur%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1728989488009!5m2!1sen!2sin" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p><strong>Nearby Location : </strong> </p>
+            </div>
+        </div>
+
+
+        <div class="state-card">
+            <div class="state-name"> Imagica</div>
+            <hr>
+            <img src="img1/imagica.jpeg" alt="">
+            <div class="card-details">
+                <p><strong>G-map:</strong> </p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30221.6116073288!2d73.23963027431643!3d18.7668679!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be8079b3fe93c4b%3A0x8555405692d304b!2sImagicaa%20Water%20park!5e0!3m2!1sen!2sin!4v1728989870950!5m2!1sen!2sin" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p><strong>Nearby Location : </strong> </p>
+            </div>
+        </div>
+
+
+        <div class="state-card">
+            <div class="state-name">Wet n Joy </div>
+            <hr>
+            <img src="img1/wetnjoy.jpg" alt="">
+            <div class="card-details">
+                <p><strong>G-map:</strong> </p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3777.797693951523!2d73.50913927930964!3d18.762571436942743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2abb216646867%3A0x13c74f32bdfc2c55!2sWet%E2%80%99nJoy%20Water%20Park%20%26%20Amusement%20Park!5e0!3m2!1sen!2sin!4v1728989964018!5m2!1sen!2sin" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p><strong>Nearby Location : </strong> </p>
+            </div>
+        </div>
+
+
+
+        <div class="state-card">
+            <div class="state-name"> Water Kingdom</div>
+            <hr>
+            <img src="img1/kingdom.jpg" alt="">
+            <div class="card-details">
+                <p><strong>G-map:</strong> </p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3767.168440482829!2d72.80495077505599!3d19.23148948200538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b158c07de9a1%3A0x32baf35dc9c8af10!2sWater%20Kingdom!5e0!3m2!1sen!2sin!4v1728990036367!5m2!1sen!2sin" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p><strong>Nearby Location : </strong> </p>
+            </div>
+        </div>
+
+
+        <div class="state-card">
+            <div class="state-name"> Alibaug </div>
+            <hr>
+            <img src="img1/alibaugh.jpeg" alt=""width="300" height="250" >
+            <div class="card-details">
+                <p><strong>G-map:</strong> </p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241909.73583047!2d72.72545660831558!3d18.67119144889041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be87a3bbaac97ef%3A0x5a84bb4da54dafae!2sAlibaug%20Beach!5e0!3m2!1sen!2sin!4v1728990763278!5m2!1sen!2sin" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p><strong>Nearby Station: Alibaug Bus Depot</strong></p>
+            </div>
+        </div>
+
+        <div class="state-card">
+            <div class="state-name"> sula wines </div>
+            <hr>
+            <img src="img1/sula.jpeg" alt=""width="300"height="250">
+            <div class="card-details">
+                <p><strong>G-map:</strong> </p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3749.076113169455!2d73.68587167500242!3d20.005319981400106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bddedba795be8dd%3A0xb20dce447adb0a9d!2sSula%20Vineyards!5e0!3m2!1sen!2sin!4v1728989138924!5m2!1sen!2sin" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p><strong> Nearby Station : Nashik Road station </strong></p>
+            </div>
+        </div>
+
+        
+    <div class="state-card">
+        <div class="state-name"> dagdusheth halwai </div>
+        <hr>
+        <img src="img1/pune temple.jpeg" alt=""width="300"height="250">
+        <div class="card-details">
+            <p><strong>G-map:</strong> </p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.275912961116!2d73.85355797496278!3d18.516429682576334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c06fa5b442ff%3A0x9df365f5b648bce1!2sShrimant%20Dagdusheth%20Halwai%20Ganpati%20Mandir!5e0!3m2!1sen!2sin!4v1728990087387!5m2!1sen!2sin" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <p><strong>Nearby Station : Pune</strong></p>
+        </div>
+    </div>
+
+
+    
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+        }
+
+        document.getElementById('search').addEventListener('input', function() {
+            const query = this.value.toLowerCase();
+            const cards = document.querySelectorAll('.state-card');
+
+            cards.forEach(card => {
+                const stateName = card.querySelector('.state-name').textContent.toLowerCase();
+                card.style.display = stateName.includes(query) ? '' : 'none';
+            });
+        });
+    </script>
+
+</body>
+</html>

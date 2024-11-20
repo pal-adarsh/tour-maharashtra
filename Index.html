@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to Maharashtra</title>
+
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Poppins', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+      overflow: hidden;
+    }
+
+    /* Add subtle background animation */
+    body::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url('img/maharashtra.jpg') no-repeat center center/cover;
+      animation: backgroundMove 20s ease-in-out infinite alternate;
+      z-index: -1;
+    }
+
+    @keyframes backgroundMove {
+      0% { background-position: center; }
+      100% { background-position: top right; }
+    }
+
+    .welcome-section {
+      text-align: center;
+      color: #fff;
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 60px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+      transition: all 0.4s ease-in-out;
+      animation: fadeIn 2s ease-in;
+    }
+
+    .welcome-section:hover {
+      transform: scale(1.05);
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.7);
+    }
+
+    .welcome-section h1 {
+      font-size: 4rem;
+      margin-bottom: 20px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      background: linear-gradient(90deg, #f093fb, #f5576c);
+      -webkit-background-clip: text;
+      color: transparent;
+      animation: slideInDown 2s ease-out;
+    }
+
+    .welcome-section p {
+      font-size: 1.5rem;
+      margin-bottom: 30px;
+      line-height: 1.6;
+      max-width: 700px;
+      margin: 0 auto;
+      animation: slideInLeft 2.5s ease-out;
+      color: #ffecd2;
+    }
+
+    .explore-btn {
+      background: linear-gradient(90deg, #667eea, #764ba2);
+      padding: 15px 30px;
+      color: white;
+      font-size: 1.3rem;
+      text-decoration: none;
+      border-radius: 50px;
+      display: inline-block;
+      transition: all 0.4s ease;
+      animation: zoomIn 2.5s ease-in;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+      transform: scale(1);
+    }
+
+    .explore-btn:hover {
+      background: linear-gradient(90deg, #764ba2, #667eea);
+      transform: scale(1.1);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+    }
+
+    .explore-btn:active {
+      transform: scale(0.95);
+    }
+
+    /* Add floating elements */
+    .floating {
+      position: absolute;
+      animation: floating 6s ease-in-out infinite;
+    }
+
+    .cloud {
+      top: 15%;
+      left: -15%;
+      width: 300px;
+      opacity: 0.2;
+      animation-duration: 20s;
+    }
+
+    .balloon {
+      top: 50%;
+      right: -10%;
+      width: 150px;
+      opacity: 0.8;
+      animation-duration: 12s;
+    }
+
+    /* Keyframes for animations */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideInDown {
+      from { transform: translateY(-100px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes slideInLeft {
+      from { transform: translateX(-100px); opacity: 0; }
+      to { transform: translateX(0); opacity: 1; }
+    }
+
+    @keyframes zoomIn {
+      from { transform: scale(0.5); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+
+    @keyframes floating {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-20px); }
+      100% { transform: translateY(0px); }
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Welcome Section -->
+  <div class="welcome-section">
+    <h1>Welcome to Maharashtra!</h1>
+    <p>Discover the beauty, culture, and heritage of Maharashtra, the land of dreams and diversity. From the bustling city of Mumbai to the serene hill stations, Maharashtra has it all!</p>
+    <a href="new tourism.html" class="explore-btn">Explore Maharashtra</a>
+  </div>
+
+  <!-- Floating Elements for Animation -->
+  <img src="img/cloud.png" class="floating cloud" alt="Floating Cloud">
+  <img src="img/balloon.png" class="floating balloon" alt="Floating Balloon">
+
+</body>
+</html>
